@@ -1,0 +1,1 @@
+local a="000AAA"function tFR.setRegistrationNumber(b)a=b end;function tFR.getRegistrationNumber()return a end

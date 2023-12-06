@@ -1,0 +1,1 @@
+-- gg retards thats wattskills code so no ty, dm @wattskill on discord to buy it

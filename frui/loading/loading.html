@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="./assets/css/loading.css" rel="stylesheet"/>
+
+    </head>
+
+    <body>
+        
+        <div class="loading" id="loading">
+
+            <div class="loading_video" id="loading_video"></div>
+
+            <div class="loading_text">
+
+                LOADING<a>.</a><a>.</a><a>.</a>
+
+            </div>
+
+            <button class="link_button loading_discord" onclick="window.invokeNative('openUrl', 'https://discord.gg/fr5m')">
+
+                <i class="fa-brands fa-discord"></i> DISCORD
+
+            </button>
+
+            <button class="link_button loading_tebex" onclick="window.invokeNative('openUrl', 'https://store.frstudios.co.uk/')">
+
+                <i class="fa-solid fa-cart-shopping"></i> TEBEX
+
+            </button>
+
+            <div class="loading_buttons">
+
+                <div class="left">
+
+                    <img id="loading_image"/>
+
+                    <a id="loading_label" class="label">LABEL</a>
+                    <a id="loading_author" class="author"></a>
+
+                </div>
+                <div class="loading_logo">
+                    <img src=https://cdn.discordapp.com/attachments/1111316733937066055/1146057557081858121/K22ZrPN.png>
+                </div>
+
+                <div class="right">
+
+                    <button class="action_button back" onclick="Back()">
+                    
+                        <i class="fa-solid fa-backward-step"></i>
+                    
+                    </button>
+
+                    <button class="action_button toggle" onclick="Toggle()" id="loading_toggle">
+                    
+                        <i class="fa-solid fa-pause"></i>
+                    
+                    </button>
+
+                    <button class="action_button forward" onclick="Forward()">
+                    
+                        <i class="fa-solid fa-forward-step"></i>
+                    
+                    </button>
+
+                    <a id="loading_current" class="current">0:00</a>
+
+                    <input class="bar" id="loading_bar" type="range" min="0" max="100" step="1" value="12"></input>
+
+                    <a id="loading_total" class="total">0:00</a>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <script src="./assets/js/loading.js"></script>
+        
+    </body>
+
+</html>
